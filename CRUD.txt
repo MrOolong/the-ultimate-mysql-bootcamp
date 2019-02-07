@@ -6,3 +6,13 @@ Create
 Read
 Update
 Delete
+
+Examples of Create:
+CREATE DATABASE databasename;
+CREATE TABLE tablename;
+INSERT INTO tablename () VALUES ();
+
+Examples of Read:
+SELECT * FROM tablename; //shows everything or all columns from table
+SELECT columnname FROM tablename; //select single column of data from table
+SELECT columnname1, columnname2 FROM tablename; //select data from 2 columns - can be repeated via comma deliniation
