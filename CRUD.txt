@@ -1,3 +1,8 @@
 >>CRUD<<
 
-CREATE READ UPDATE DELETE
+The basics of CRUD
+
+Create
+Read
+Update
+Delete
