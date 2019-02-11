@@ -8,19 +8,21 @@ Update
 Delete
 
 Examples of Create:
-CREATE DATABASE databasename;
-CREATE TABLE tablename;
-INSERT INTO tablename () VALUES ();
+1) CREATE DATABASE databasename;
+2) CREATE TABLE tablename;
+3) INSERT INTO tablename () VALUES ();
 
 Examples of Read:
-SELECT * FROM tablename; //shows everything or all columns from table
-SELECT columnname FROM tablename; //select single column of data from table
-SELECT columnname1, columnname2 FROM tablename; //select data from 2 columns - can be repeated via comma deliniation
+1) SELECT * FROM tablename; //shows everything or all columns from table
+2) SELECT columnname FROM tablename; //select single column of data from table
+3) SELECT columnname1, columnname2 FROM tablename; //select data from 2 columns - can be repeated via comma deliniation
 
 More detailed Read examples using the WHERE clause:
-SELECT * FROM tablename WHERE column = 4;
-SELECT * FROM tablename WHERE column = 'text'; //text by default is case insensitive e.g. 'Egg' vs. 'egG' return the same results from a table containing 'Egg';
+1) SELECT * FROM tablename WHERE column = 4;
+2) SELECT * FROM tablename WHERE column = 'text'; //text by default is case insensitive e.g. 'Egg' vs. 'egG' return the same results from a table containing 'Egg';
 
 Aliases:
-Specifying how data is read back to us. It is used for simplifying names when column names within the tables could be complex or duplicates when using multiple tables.
+1) Specifying how data is read back to us. It is used for simplifying names when column names within the tables could be complex or duplicates when using multiple tables.
 e.g. SELECT cat_id AS id, name FROM cats;
+
+Examples of Update:
