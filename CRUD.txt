@@ -9,8 +9,8 @@ Delete
 
 Examples of Create:
 1) CREATE DATABASE databasename;
-2) CREATE TABLE tablename;
-3) INSERT INTO tablename () VALUES ();
+2) CREATE TABLE tablename (columnname DATATYPE); // In the event you need to change the data type of a column, use ALTER TABLE tablename MODIFY COLUMN columnname datatype;
+3) INSERT INTO tablename () VALUES (); // Inserting info into table columns
 
 Examples of Read:
 1) SELECT * FROM tablename; //shows everything or all columns from table
@@ -27,9 +27,9 @@ e.g. SELECT cat_id AS id, name FROM cats;
 
 Examples of Update:
 1) UPDATE tablename SET columnname='text' WHERE columnname='text';
-*** A good rule of thumb is to make sure to SELECT the data you intend to UPDATE prior to updating;
+// A good rule of thumb is to make sure to SELECT the data you intend to UPDATE prior to updating;
 
 Examples of Delete:
 1) DELETE FROM tablename WHERE columnname = 'text';
 2) DELETE FROM tablename WHERE columnname = tablename;
-3) DELETE FROM tablename; (Deletes all contents of table)
+3) DELETE FROM tablename; //Deletes all contents of table
