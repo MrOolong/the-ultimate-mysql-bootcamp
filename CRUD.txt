@@ -28,3 +28,8 @@ e.g. SELECT cat_id AS id, name FROM cats;
 Examples of Update:
 1) UPDATE tablename SET columnname='text' WHERE columnname='text';
 *** A good rule of thumb is to make sure to SELECT the data you intend to UPDATE prior to updating;
+
+Examples of Delete:
+1) DELETE FROM tablename WHERE columnname = 'text';
+2) DELETE FROM tablename WHERE columnname = tablename;
+3) DELETE FROM tablename; (Deletes all contents of table)
