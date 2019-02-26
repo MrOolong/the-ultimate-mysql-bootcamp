@@ -1,0 +1,9 @@
+STRING FUNCTIONS
+
+*USING CONCAT // Combine data for cleaner output
+Example:
+SELECT CONCAT(columnName1, columnName2) FROM tablename; // No space is included between the data
+SELECT CONCAT(columnName1, ' ', columnName2) FROM tablename; // Adds space between the data of each column.
+
+*USING CONCAT_WS (Concat with separator e.g. comma, dash, etc.);
+SELECT CONCAT_WS('-', columnName1, columnName2) FROM tablename;
