@@ -5,5 +5,8 @@ Example:
 SELECT CONCAT(columnName1, columnName2) FROM tablename; // No space is included between the data
 SELECT CONCAT(columnName1, ' ', columnName2) FROM tablename; // Adds space between the data of each column.
 
-*USING CONCAT_WS (Concat with separator e.g. comma, dash, etc.);
+*USING CONCAT_WS // Concat with separator e.g. comma, dash, etc.
 SELECT CONCAT_WS('-', columnName1, columnName2) FROM tablename;
+
+*USING SUBSTRING // Work with parts of strings
+SELECT SUBSTRING('Hello World', 1, 4); // Prints "Hell" 1-4 are indices of the characters in the string
