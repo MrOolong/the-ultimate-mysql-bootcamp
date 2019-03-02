@@ -10,3 +10,12 @@ SELECT CONCAT_WS('-', columnName1, columnName2) FROM tablename;
 
 *USING SUBSTRING // Work with parts of strings
 SELECT SUBSTRING('Hello World', 1, 4); // Prints "Hell" 1-4 are indices of the characters in the string
+SELECT SUBSTRING('Hello World', -3); // Starts at end of string and goes to the left 3 characters aka "rld";
+SELECT SUBSTR(); // Abbreviation also works
+SELECT SUBSTRING(columnName1, 1, 10) FROM tablename;
+
+*COMBINING CONCAT AND SUBSTRING
+SELECT CONCAT(SUBSTRING(columnName1, 1, 10), '...') FROM tablename; // This would add an ellipsis to the content of the the column used
+
+USING REPLACE // Replace parts of strings
+SELECT REPLACE ('Hello World', 'Hell', '%$#@'); // Output is "%$#@o World" // Similar to the function in Microsoft Excel
