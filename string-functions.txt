@@ -17,5 +17,8 @@ SELECT SUBSTRING(columnName1, 1, 10) FROM tablename;
 *COMBINING CONCAT AND SUBSTRING
 SELECT CONCAT(SUBSTRING(columnName1, 1, 10), '...') FROM tablename; // This would add an ellipsis to the content of the the column used
 
-USING REPLACE // Replace parts of strings
+*USING REPLACE // Replace parts of strings
 SELECT REPLACE ('Hello World', 'Hell', '%$#@'); // Output is "%$#@o World" // Similar to the function in Microsoft Excel
+
+*COMBINING SUBSTRING & REPLACE
+SELECT SUBSTRING(REPLACE(columnName1, 'e', '3'), 1, 10) FROM tablename;
