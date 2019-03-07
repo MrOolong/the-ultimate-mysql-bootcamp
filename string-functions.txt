@@ -22,3 +22,6 @@ SELECT REPLACE ('Hello World', 'Hell', '%$#@'); // Output is "%$#@o World" // Si
 
 *COMBINING SUBSTRING & REPLACE
 SELECT SUBSTRING(REPLACE(columnName1, 'e', '3'), 1, 10) FROM tablename;
+
+*USING REVERSE
+SELECT REVERSE('Hello World'); // Outputs dlroW olleH
