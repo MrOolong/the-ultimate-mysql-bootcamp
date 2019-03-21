@@ -1,0 +1,1 @@
+SELECT REVERSE(UPPER('Why does my cat look at me with such hatred')); /* Reserve and uppercase the text within */
